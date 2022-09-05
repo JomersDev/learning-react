@@ -4,9 +4,15 @@ import Question from "../components/Question.js"
 
 export default function App() {
     const [gameStart, setGameStart] = React.useState(false)
+    const [butonSelected, setButtonSelected] = React.useState(false)
     
     function startQuiz() {
         setGameStart(true)
+    }
+
+    function buttonIsSelected() {
+        setButtonSelected(prevState => !prevState)
+        console.log("clicked")
     }
 
     return (
@@ -17,7 +23,12 @@ export default function App() {
                 <Title startQuiz={startQuiz}/> 
                 :
                 <div className="question-container"> 
-                <Question />
+                <Question buttonSelected={buttonIsSelected} buttonClicked={butonSelected}/> 
+                <Question buttonSelected={buttonIsSelected} buttonClicked={butonSelected}/>
+                <Question buttonSelected={buttonIsSelected} buttonClicked={butonSelected}/>
+                <Question buttonSelected={buttonIsSelected} buttonClicked={butonSelected}/>
+                <Question buttonSelected={buttonIsSelected} buttonClicked={butonSelected}/>
+                <button className="check-button">Check Answers</button>
                 </div>
             }
         </div>
