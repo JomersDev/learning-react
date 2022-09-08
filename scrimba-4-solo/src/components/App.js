@@ -12,7 +12,7 @@ export default function App() {
 
     function buttonIsSelected() {
         setButtonSelected(prevState => !prevState)
-        console.log("clicked")
+        console.log("clicked")       
     }
 
     return (
