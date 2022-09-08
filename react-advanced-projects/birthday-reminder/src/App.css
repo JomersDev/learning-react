@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f28ab2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: karla;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.birthday-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  height: 650px;
+  width: 450px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.birthday-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pfp {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.age {
+  color: rgb(51, 39, 167);
+}
+
+.btn {
+  background-color: #f28ab2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: karla;
+  height: 45px;
+  font-size: 25px;
+  cursor: pointer;
+}
