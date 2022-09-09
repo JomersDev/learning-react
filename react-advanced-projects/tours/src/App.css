@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  background-color: rgb(217, 222, 223);
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h4, p {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper-title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.wrapper-title:after {
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  width: 15%; 
+  padding-top: 5px;
+  border-bottom: 3px solid rgb(37, 160, 218); 
+}
+
+
+.img {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tour-container {
+  width: 500px;
+  background-color: rgb(243, 236, 236);
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.tour-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.tour-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.tour-price {
+  font-weight: 600;
+  color: rgb(58, 168, 211);
+  background-color: rgb(201, 236, 250);
+  border-radius: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.tour-para {
+  color: rgb(163, 160, 160);
+}
+
+.btn {
+  background-color: rgb(243, 236, 236);
+  border: 1px solid rgb(180, 30, 30);
+  border-radius: 7px;
+  width: 35%;
+  height: 30px;
+  font-family: Roboto;
+  color: rgb(180, 30, 30);
+  align-self: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: rgb(248, 227, 227);
+}
+
+.btn2 {
+  background-color: rgb(81, 163, 218);
+  border: none;
+  border-radius: 7px;
+  width: 100px;
+  height: 35px;
+  font-family: Roboto;
+  color: rgb(255, 255, 255);
+  align-self: center;
+  cursor: pointer;
+  margin-left: 45px;
+  font-size: 20px;
+}
+
+.btn2:hover {
+  background-color: rgb(40, 136, 201);
+}
+
+.read-more {
+  color: rgb(58, 168, 211);
+  cursor: pointer;
 }
