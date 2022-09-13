@@ -43,12 +43,25 @@ h4, h1 {
     object-fit: cover;
 }
 
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+@media screen and (max-width: 968px) {
+    .menu-grid {
+        display: block;
+    }
+  }
+
+
 .menu-item-container {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-top: 3rem;
-    max-width: 80vw;
+    width: 35rem;
 }
 
 .menu-details-container {
@@ -100,6 +113,11 @@ h4, h1 {
 }
 
 .btn:hover {
+    background-color: #c59d5f;
+    color: #f1f5f8;
+}
+
+.btn:focus {
     background-color: #c59d5f;
     color: #f1f5f8;
 }
