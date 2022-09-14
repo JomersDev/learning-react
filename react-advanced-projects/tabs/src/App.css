@@ -19,6 +19,12 @@ h1, h3, h4, p {
   padding: 0;
 }
 
+.underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #2caeba;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -30,16 +36,18 @@ h1, h3, h4, p {
 .experience-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  margin-top: 2rem;
 }
 
 .detail-container {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 }
 
 .comapny-selector {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   width: 80%;
 }
@@ -58,6 +66,37 @@ h1, h3, h4, p {
   box-shadow: -2px 0px 0px 0px #2caeba
 }
 
-.company-btn:active {
+.company-btn:focus {
   color: #2caeba;
+  box-shadow: -2px 0px 0px 0px #2caeba
+}
+
+.role-container h3 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.role-container h4 {
+  background-color: #dae2ec;
+  text-transform: uppercase;
+  color: #617d98;
+  width: 7.4rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1rem;
+}
+
+.role-container p {
+  color: #617d98;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+
+}
+
+.detail-container p {
+  color: black;
+  letter-spacing: 0;
 }
